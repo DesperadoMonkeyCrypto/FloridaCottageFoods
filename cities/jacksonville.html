@@ -12,32 +12,54 @@
   <meta property="og:description" content="Find Jacksonville cottage food vendors: cakes, cookies, freeze-dried snacks, jams & gifts." />
   <meta property="og:url" content="https://floridacottagefoods.com/cities/jacksonville.html" />
   <meta property="og:image" content="https://floridacottagefoods.com/og-cover.jpg" />
-  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/styles/site.css?v=1" />
   <script type="application/ld+json">{
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Jacksonville — Home Bakers & Treats",
-    "url": "https://floridacottagefoods.com/cities/jacksonville.html",
-    "isPartOf": { "@type": "WebSite", "url": "https://floridacottagefoods.com/" },
-    "about": {
-      "@type": "Place",
-      "name": "Jacksonville, Florida",
-      "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressLocality": "Jacksonville", "addressCountry": "US" }
-    }
-  }</script>
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"Jacksonville — Home Bakers & Treats",
+    "url":"https://floridacottagefoods.com/cities/jacksonville.html",
+    "isPartOf":{"@type":"WebSite","url":"https://floridacottagefoods.com/"},
+    "about":{"@type":"Place","name":"Jacksonville, Florida",
+      "address":{"@type":"PostalAddress","addressRegion":"FL","addressLocality":"Jacksonville","addressCountry":"US"}}}
+  </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <h1>Jacksonville — Home Bakers & Treats</h1>
-      <p class="sub">Local home bakeries, freeze-dried snacks, and gifts in Jacksonville.</p>
-      <nav class="cta-row"><a class="btn" href="/">← Home</a></nav>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="/">Florida Cottage Foods</a>
+      <nav class="nav-links tiny">
+        <a href="/">Home</a><a href="/#browse">Browse</a><a href="/#quotes">Get Quotes</a><a href="/#list">Add Listing</a>
+        <a href="/legal.html">Florida Law (EN)</a><a href="/es/legal.html">Ley (ES)</a>
+      </nav>
     </div>
   </header>
-  <main class="wrap">
-    <p><a class="btn" href="https://snapdragon-gray-a82.notion.site/71c3d12abe9248aba722dfbd7aa3f210?v=8dbcc4649c514315849e180bbf7dc6ab" target="_blank" rel="noopener">Open Jacksonville Vendors</a></p>
-    <p class="tiny">Vendors can request updates or claim listings via the <a href="/#list">Vendor Form</a>.</p>
+  <section class="hero">
+    <div class="container">
+      <div class="trust-row"><span class="trust-badge">Safe · Florida Legal · In-State Only</span></div>
+      <h1 class="hero-title">Jacksonville — Home Bakers & Treats</h1>
+      <p class="hero-sub">Local home bakeries, freeze-dried snacks, and giftable goodies in Jacksonville.</p>
+    </div>
+  </section>
+  <main class="container">
+    <section class="section">
+      <h2>Live Vendor Board — Jacksonville</h2>
+      <p class="muted tiny">Synced from our Notion directory. Makers: use the Vendor Form on the home page to add or claim your listing.</p>
+      <iframe class="embed" title="Jacksonville Cottage Food Vendors" src="https://snapdragon-gray-a82.notion.site/71c3d12abe9248aba722dfbd7aa3f210?v=8dbcc4649c514315849e180bbf7dc6ab" style="width:100%; height:80vh; border:0; border-radius:8px; overflow:hidden;" allowfullscreen></iframe>
+    </section>
+    <section class="section">
+      <div class="cards">
+        <article class="card"><h3>Home Bakers & Custom Cakes</h3><p>Birthdays, weddings, events.</p></article>
+        <article class="card"><h3>Freeze-Dried & Fun Snacks</h3><p>TikTok-famous treats & candy.</p></article>
+        <article class="card"><h3>Jams, Seasonings & Gifts</h3><p>Farmers-market-worthy goodies.</p></article>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="wrap">Built in Florida by Arco — <a href="https://arcosartstudio.com" target="_blank" rel="noopener">Arco’s Art Studio</a></div></footer>
+  <footer class="footer">
+    <div class="container footer-inner tiny">
+      <div>© <span id="y"></span> Florida Cottage Foods</div>
+      <div>Built in Florida by <a target="_blank" rel="noopener" href="https://arcosartstudio.com">Arco’s Art Studio</a></div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
